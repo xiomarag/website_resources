@@ -1,0 +1,55 @@
+\documentclass[letterpaper,10pt,oneside]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{setspace}
+\usepackage{hyperref}
+\usepackage{tabularx}
+\usepackage{enumitem}
+\usepackage[T1]{fontenc}
+\usepackage{longtable}
+\usepackage[left=0.5in, right=0.5in, bottom=0.25in, top=0.25in]{geometry}
+
+\hyphenpenalty=10000
+
+\pagenumbering{gobble}
+
+\begin{document}
+
+{\LARGE\hspace{1.05in}\textsc{Name}}
+\vspace{1em}
+
+\normalsize
+\hspace{0.6in}
+\noindent \begin{tabular}{l l}
+ \hspace{0.3in}\emph{email} & \hspace{0.25in} {<<email>>}\\
+ \hspace{0.3in}\emph{website} & \hspace{0.25in} {<<website url>>}\\
+\end{tabular}
+
+\vspace{1em}
+
+\noindent \begin{tabular}{p{1in} p{6.25in}}
+    \normalsize{\sc Section} & \textbf{Bold Title \hfill Date}\\
+    & Non-bulleted description\\
+\end{tabular}
+
+\noindent \begin{longtable}{p{1in} p{6.25in}}
+    \normalsize{\sc Section} & \textbf{Bold Title \hfill Date}\\
+    & \vspace{-1\baselineskip}
+        \begin{itemize}[noitemsep,topsep=0pt]
+            \item Item 1
+            \item Item 2
+            \item Item 3
+        \end{itemize}\\
+\end{longtable}
+
+\vspace{-2\baselineskip}
+\begin{longtable}{p{1in} p{6.25in}}
+    \normalsize{\sc Section} & Title \hfill Date \\
+    & Title \hfill Date \\
+\end{longtable}
+\vspace{-1\baselineskip}
+\begin{longtable}{p{1in} p{6.25in}}
+    \normalsize{\sc Section} & \textbf{Bold Title} \\
+    & Description\\
+\end{longtable}
+
+\end{document}
